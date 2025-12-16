@@ -157,37 +157,38 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-        const DEFAULT_TEMPLATE = `伏以
-至誠拜請
-三界高真    十方聖賢    
-    
-今據
-{{地址}}
-居住
-    
-奉道信士
-{{信士}}    本命 {{出生年月}} 生
-公司行號
+        const DEFAULT_TEMPLATE = `財團法人西螺廣福宮天官武財神
+       開  運  賜  財  添   福   文
+ 
+具疏文 中華民國台灣
+    {{地址}}
+       謹請。禮請。
+天官五路武財神
+文財神 招財童子 進寶童郎 虎爺將軍 眾神祇
+       伏以
+時良吉日、天地開張、低頭下拜、躬身焚香
+香煙繞起、神通萬里、香煙沉沉、神必降臨
+神恩浩蕩、感而遂通、謹炷清香、虔誠拜啟
+恭望神慈、俯垂鑑納、今有
+信士:  {{信士}}         {{出生年月}}  生 立文叩祈
+公司行號:
 {{公司}}
-    
-誠心叩求
-天官賜福    地官赦罪    水官解厄
-    
-祈求
-生意興隆    財源廣進    闔家平安    萬事如意
-    
-    
-天運    歲次    {{農曆年}}    年    {{農曆月}}    月    {{農曆日}}    日
-    
-具疏上申`;
+請得五方財神降來臨  祈求財源廣進
+閤家平安大賺錢
+        伏願
+一進財利、二添百福、五路通商、八方進財
+開運賜財、添財補庫、闔家平安、萬事如意
+      謹此奉恭  以
+聞
+天運歲次 {{農曆年}}  年  {{農曆月}} 月 {{農曆日}}日具文`;
 
         function App() {
             const [mode, setMode] = useState('single'); 
             const [template, setTemplate] = useState(DEFAULT_TEMPLATE);
             
-            // 排版參數
-            const [fontSize, setFontSize] = useState(24);
-            const [lineHeight, setLineHeight] = useState(2.0);
+            // 排版參數 - 調整預設值以適應新模板
+            const [fontSize, setFontSize] = useState(22);
+            const [lineHeight, setLineHeight] = useState(1.8);
             const [letterSpacing, setLetterSpacing] = useState(0.1);
             
             // 資料
